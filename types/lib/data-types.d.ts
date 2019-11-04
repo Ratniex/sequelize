@@ -51,7 +51,9 @@ export const ABSTRACT: AbstractDataTypeConstructor;
 
 interface AbstractDataTypeConstructor {
   key: string;
+  new (): AbstractDataType;
   warn(link: string, text: string): void;
+  (): AbstractDataType
 }
 
 export interface AbstractDataType {
